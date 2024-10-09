@@ -1,0 +1,147 @@
+@import 'variables';
+section{
+  position: relative;
+  background-color: #1B9AAA;
+  width: 100%;
+  border-radius: 150px 150px 0px 0;
+}
+.container {
+  color: #ffffff;
+  padding: 100px 0px 100px 0px;
+  margin-top: 90px;
+
+  button{
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    // top: -20px;
+    top: -120px;
+    right: 80px;
+    // left: 200px;
+  }
+  button:hover{
+    cursor: pointer;
+    transition-duration: 0.4s;
+    background-color: $color-purpel;
+    svg{
+      path{
+        stroke: $color-white;
+      }
+    }
+  }
+
+  ul{
+    list-style: none;
+    text-decoration: none;
+    font-size: $font-title-desc-sm;
+    line-height: 20px;
+
+    a{
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+}
+.footer-main-content  {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.footer-left{
+  width: 40%;
+  // margin-left: 80px;
+
+  .footer-left-text{
+    h5{
+      margin-bottom: 20px;
+    }
+  }
+
+  .footer-left-download-our-app{
+    margin-top: 40px;
+  }
+  ul{
+    display: flex;
+    gap: 5px;
+  }
+  img{
+    height: 37px;
+    width: 120px;
+  }
+  h5{
+    margin-bottom: 20px;
+  }
+}
+
+.footer-right{
+  position: relative;
+  width: 40%;
+  display: flex;
+  gap: 80px;
+
+  h5{
+    margin-bottom: 20px;
+  }
+
+  
+}
+.link{
+  margin-bottom: 20px;
+  
+}
+
+.copyright{
+  text-align: center;
+  font-size: $font-readable;
+}
+
+@media only screen and (max-width: 599px){
+  .container{
+    padding: 50px;
+  }
+  section{
+    border-radius: 20px 20px 0 0;
+
+    button{
+      top: -20px;
+      right: 50px;
+    }
+  }
+  .footer-main-content{
+    flex-direction: column;
+    gap: 30px;
+
+    .footer-left{
+      width: 100%;
+    }
+
+    .footer-right{
+      width: 100%;
+      justify-content: space-around;
+    }
+    
+  }
+}
+
+@media only screen and (max-width: 430px){
+  .link{
+    h5{
+      font-size: 0.6rem;
+    }
+
+}
+.footer-main-content{
+  .footer-left{
+    width: 100%;
+  }
+
+  .footer-right{
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}
+}

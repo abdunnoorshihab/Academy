@@ -1,0 +1,44 @@
+<div class="item" (click)="onToggle()">
+  <div class="toggle-header">
+    <div>
+      <b>
+        {{ data?.title }}
+      </b>
+    </div>
+
+    <div class="toggle-icons">
+      @if (isOpen) {
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        fill="#5f6368"
+      >
+        <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z" />
+      </svg>
+      } @else {
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        fill="#5f6368"
+      >
+        <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+      </svg>
+
+      }
+    </div>
+  </div>
+  <!-- END Header -->
+
+  @if (isOpen) {
+  <div class="toggle-content">
+    <p>
+      {{ data?.description }}
+    </p>
+  </div>
+  <!-- END Content -->
+  }
+</div>

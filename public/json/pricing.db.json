@@ -1,0 +1,34 @@
+{
+    "data": [
+      {
+        "_id": "1",
+        "name": "Free",
+        "description": "Lorem ipsum dolor sit amet. At nostrum tempore sit omnis animi et velit officiis et fugiat repellat ut dignissimos odio rem sequi vitae.",
+        "tag":"",
+        "features":["Budgeting","Sales & support", "Budget Friendly","Maintainance"]
+      },
+      {
+        "_id": "2",
+        "name": "Standard",
+        "description": "Lorem ipsum dolor sit amet. At nostrum tempore sit omnis animi et velit officiis et fugiat repellat ut dignissimos odio rem sequi vitae.",
+        "tag":"",
+        "features":["Budgeting","Sales & support", "Budget Friendly","Maintainance"]
+      },
+      {
+        "_id": "3",
+        "name": "Premium",
+        "description": "Lorem ipsum dolor sit amet. At nostrum tempore sit omnis animi et velit officiis et fugiat repellat ut dignissimos odio rem sequi vitae.",
+        "tag":"Best Value",
+        "features":["Budgeting","Sales & support", "Budget Friendly","Maintainance"]
+      },
+      {
+        "_id": "4",
+        "name": "Platinum",
+        "description": "Lorem ipsum dolor sit amet. At nostrum tempore sit omnis animi et velit officiis et fugiat repellat ut dignissimos odio rem sequi vitae.",
+        "tag":"Best Value",
+        "features":["Budgeting","Sales & support", "Budget Friendly","Maintainance"]
+      }
+     
+    ]
+  }
+  

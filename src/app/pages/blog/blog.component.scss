@@ -1,0 +1,83 @@
+.outter-parent{
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.parent{
+    margin-top: 100px;
+    position: relative;
+}
+
+.bgline-01{
+    position: absolute;
+    background-image: linear-gradient(to left, #1B9AAA, transparent);
+    width: 300px;
+    height: 60px;
+    left: -80px;
+    border-radius: 50px;
+    z-index: -1;
+}
+
+.bgCircle-01{
+   position: absolute;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   background-color: #1B9AAA;
+   right: 80px;
+   top: 30px;
+}
+
+.bgCircle-02{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #1B9AAA;
+    left: 100px;
+    top: 50%;
+    z-index: -1;
+ }
+
+.bgCircle-03{
+    position: absolute;
+    width: 100px;
+    bottom: 10px;
+    z-index: -1;
+
+    img{
+        width: 100%;
+    }
+}
+
+
+.bgbox-01{
+    position: absolute;
+    width: 500px;
+    right: -400px;
+    bottom: 200px;
+    z-index: -1;
+    img{
+        width: 100%;
+    }
+}
+
+
+
+ @media only screen and (max-width: 599px) {
+
+    .bgline-01{
+        width: 100px;
+        left: -50px;
+    }
+
+    .bgCircle-01{
+        right: 20px;
+     }
+
+     .bgCircle-02{
+        display: none;
+     }
+  
+}

@@ -1,0 +1,26 @@
+.circle {
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    // gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    cursor: pointer;
+    z-index: 1;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.circle img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    
+}

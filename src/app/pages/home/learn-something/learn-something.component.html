@@ -1,0 +1,18 @@
+<h2>LEARN SOMETHING NEW</h2>
+<div class="cards">
+  @for (data of customDb; track data) {
+  <app-learn-something-card [inputData]="data"></app-learn-something-card>
+  }
+</div>
+<div class="carousel">
+  <div class="carousel-slide">
+    <img src="/images/bulb.jpg" alt="Lightbulb" />
+  </div>
+  <div class="carousel-indicators">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</div>

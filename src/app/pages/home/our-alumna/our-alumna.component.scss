@@ -1,0 +1,38 @@
+@import 'variables';
+.container{
+    width: 95%;
+    max-width: $container-max-width;
+    margin: 0 auto;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    h3{
+        font-size: calc($font-title + 20px);
+        font-family:$font-en-Permanent_Marker ;
+        font-weight: 900;
+        color: $color-pest;
+    }
+}
+.circle-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+   
+}
+
+
+/* Responsive Design */
+@media screen and (max-width:599px) {
+    .head{
+        h3{
+      text-align: center;
+        }
+    }
+    .circle-container {
+       text-align: center;
+    }
+}

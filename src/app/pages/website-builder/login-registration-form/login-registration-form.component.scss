@@ -1,0 +1,55 @@
+@import "variables";
+@import "exports/form-fixed-input";
+@import "exports/custom-button";
+
+form {
+  width: 95%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+
+.phone-input {
+  ::ng-deep .input-label {
+    margin-left: -72px;
+  }
+
+}
+
+//.fixed-view-input {
+//  gap: 8px;
+//
+//  .fixed-value {
+//  }
+//}
+
+
+.icon {
+  margin-top: 3px;
+}
+
+
+.action {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.forget-password {
+  text-align: right;
+  margin-bottom: 10px;
+
+  a {
+    font-size: 13px;
+
+  }
+}
+
+
+@media only screen and (max-width: 599px) {
+  .d-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+

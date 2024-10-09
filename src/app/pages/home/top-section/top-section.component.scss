@@ -1,0 +1,141 @@
+@import 'variables';
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-section {
+  margin-top: 100px;
+  text-align: center;
+  padding: 20px;
+
+  .feature-tag span {
+    display: inline-block;
+    border: 1px solid #cccccc;
+    color: $color-black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    b{
+      display: inline-block;
+      height: 8px;
+      width: 8px;
+      margin-right: 5px;
+      border-radius: 50%;
+      background-color: rgba(93, 54, 255, 0.7);
+      animation: fade 5s ease-in-out infinite;
+    }
+
+    @keyframes fade {
+      0% {
+        background-color: rgba(93, 54, 255, 1); /* Full opacity */
+      }
+      50% {
+        background-color: rgba(93, 54, 255, 0.1); /* Low opacity */
+      }
+      100% {
+        background-color: rgba(93, 54, 255, 1); /* Full opacity */
+      }
+    }
+  }
+
+  h1 {
+    margin: 20px 20px 0 20px;
+    font-family: $font-en-primary;
+    font-size: calc($font-title + 38px);
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    line-height: 1.1em;
+    text-align: center;
+  }
+
+  .sub-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  p {
+    max-width: 515px;
+    margin: 20px 0;
+    color: $color-black;
+    font-family: $font-en-primary;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.5em;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: $button-color;
+    color: #fff;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 4px 10px -2px, rgba(0, 0, 0, 0.1) 0px 2px 2px -1px, rgba(102, 72, 250, 0.12) 0px 0px 0px 1px;
+    transition: background-color 0.3s;
+  }
+
+  .cta-button:hover {
+    background-color: #3c24b1;
+  }
+
+}
+
+//.logo-container {
+//  overflow: hidden;
+//  margin-top: 50px;
+//  width: 100%;
+//  position: relative;
+//}
+//
+//.logo-container:before, .logo-container:after {
+//  content: '';
+//  position: absolute;
+//  top: 0;
+//  width: 100px;
+//  height: 100%;
+//  z-index: 1;
+//}
+//
+//.logo-container:before {
+//  left: 0;
+//  background: linear-gradient(to right, #fdfcfc 0%, transparent 100%);
+//}
+//
+//.logo-container:after {
+//  right: 0;
+//  background: linear-gradient(to left, #fff 0%, transparent 100%);
+//}
+//
+//.logos {
+//  display: flex;
+//  animation: slide 20s linear infinite;
+//}
+//
+//.logos img {
+//  margin: 0 20px;
+//  max-height: 50px;
+//}
+//
+//@keyframes slide {
+//  0% {
+//    transform: translateX(0);
+//  }
+//  100% {
+//    transform: translateX(-50%);
+//  }
+//}
+
+
+@media only screen and (max-width: 802px) {
+  h1 {
+    font-size: calc($font-title-sm + 8px);
+  }
+}

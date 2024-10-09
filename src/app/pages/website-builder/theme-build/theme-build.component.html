@@ -1,0 +1,71 @@
+<div class="theme-build">
+
+  @if(!isThemeBuildStart) {
+    <div class="select-theme">
+      @for (data of themes; track data._id) {
+        <app-theme-card
+          [data]="data"
+          [activeId]="selectedTheme?._id"
+          (onSelect)="onSelectTheme($event)">
+        </app-theme-card>
+      }
+
+    </div>
+
+    <div class="action">
+      @if(!isLoading) {
+        <button type="button" class="btn-primary" (click)="onBuild()">Build Now</button>
+      }
+
+      @if(isLoading) {
+        <button type="button" class="btn-primary btn-loading">
+          <div><span class="loader btn-loader"></span></div>
+          <div>Please Wait</div>
+        </button>
+      }
+
+    </div>
+  }
+
+  @if(isThemeBuildStart) {
+    <div class="horizontal-steps-container">
+
+      @for (data of themeBuildOpts; track data._id) {
+        <div class="step-item">
+          <div class="head">
+
+            <div class="left">
+              @if (data.status === 'completed') {
+                <div class="completed"></div>
+              } @else if (data.status === 'working') {
+                <div><span class="loader"></span></div>
+              } @else {
+                <div class="pending"><b></b></div>
+              }
+
+              <div class="title">
+                <h6>{{ data.title }}</h6>
+              </div>
+            </div>
+
+            @if (data.status === 'working') {
+              <div class="timer">
+                <p>{{countDown | secToTime : 'minute'}}: {{countDown | secToTime : 'second'}}</p>
+              </div>
+            }
+          </div>
+          @if (data.status === 'working') {
+            <div class="content">
+              <div class="animated-view">
+                <div class="icon" [innerHTML]="data.icon | safeHtmlCustom"></div>
+              </div>
+            </div>
+          }
+        </div> <!-- END Item -->
+      }
+
+    </div>
+  }
+
+
+</div>

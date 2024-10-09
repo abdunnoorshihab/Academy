@@ -1,0 +1,24 @@
+
+<header>
+  <div class="container">
+    <div class="logo">
+      <a href=""><img src="\icons\WP-logo.png" alt=""></a>
+    </div>
+    <div class="navbar" [class.active]="isMenuOpen">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="button">
+      <button>Register Now</button>
+    </div>
+    <div class="hamburger" [class.open]="isMenuOpen" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>

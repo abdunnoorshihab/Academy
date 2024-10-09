@@ -1,0 +1,10 @@
+@import "variables";
+
+
+.container {
+  width: 95%;
+  max-width: $container-max-width;
+  margin: calc($header-height + 20px) auto $header-height;
+  background: #fff;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}

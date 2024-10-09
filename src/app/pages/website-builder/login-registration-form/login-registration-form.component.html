@@ -1,0 +1,77 @@
+
+
+<form (ngSubmit)="onSubmit()"
+      [formGroup]="dataForm"
+      #formElement="ngForm">
+
+  <div class="fixed-view-input w-100">
+    <div class="fixed-value">
+      <div class="icon" [innerHTML]="bdFlag | safeHtmlCustom"></div>
+      <div class="txt">
+        <p>+88</p>
+      </div>
+    </div>
+    <app-form-input-item
+      class="phone-input w-100"
+      [controlName]="phoneNoCtrl"
+      placeholder="Enter phone no"
+      label="Phone No"
+      [required]="true"
+      type="tel"
+      [touched]="phoneNoCtrl.touched"
+      [invalid]="phoneNoCtrl.invalid">
+    </app-form-input-item>
+  </div>
+
+  @if(activityType === 'signup') {
+    <app-form-input-item
+      class="w-100"
+      [controlName]="otpCtrl"
+      placeholder="Enter otp"
+      label="Otp"
+      [required]="activityType === 'signup'"
+      type="text"
+      [touched]="otpCtrl.touched"
+      [invalid]="otpCtrl.invalid">
+    </app-form-input-item>
+
+    <app-form-input-item
+      class="w-100"
+      [controlName]="nameCtrl"
+      placeholder="Enter your name"
+      label="Name"
+      [required]="activityType === 'signup'"
+      type="text"
+      [touched]="nameCtrl.touched"
+      [invalid]="nameCtrl.invalid">
+    </app-form-input-item>
+  }
+
+  @if(activityType !== '') {
+    <app-form-input-item
+      class="w-100"
+      [controlName]="passwordCtrl"
+      placeholder="Enter password"
+      label="Password"
+      [required]="activityType !== ''"
+      type="password"
+      [touched]="passwordCtrl.touched"
+      [invalid]="passwordCtrl.invalid">
+    </app-form-input-item>
+  }
+
+
+  @if(activityType === 'login') {
+    <div class="forget-password">
+      <a href="/">Forget Password? click here to reset</a>
+    </div>
+  }
+
+
+  <div class="action">
+    <button class="btn-primary" type="submit">{{submitBtnText}}</button>
+  </div>
+
+
+
+</form>

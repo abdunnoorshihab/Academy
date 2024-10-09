@@ -1,0 +1,54 @@
+@import "variables";
+.card {
+  // background-color: #0097a7;
+  border-radius: 20px;
+  width: 300px;
+  height: 230px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+  h3 {
+    color: #fff;
+    font-family: $font-en-satoshi;
+    font-size: $font-sub-title-sm;
+    margin-bottom: 20px;
+  }
+
+  .icon {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .details-btn {
+    // background-color: #0097a7;
+    box-shadow: rgba(53, 52, 52, 0.2) 0px 2px 8px 0px;
+    position: absolute;
+    color: #fff;
+    padding: 10px 40px;
+    bottom: -15px;
+    left: 22%;
+    border: none;
+    border-radius: 30px;
+    font-family: $font-en-poppins;
+    font-size: $font-title-desc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .details-btn:hover {
+    background-color: #014f5a;
+  }
+}

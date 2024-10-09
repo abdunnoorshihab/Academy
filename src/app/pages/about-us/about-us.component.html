@@ -1,0 +1,17 @@
+<div class="container">
+  <app-title-banner></app-title-banner>
+</div>
+<app-about-us-banner></app-about-us-banner>
+
+<div class="outter-container">
+  <app-what-you-will-learn></app-what-you-will-learn>
+  <app-our-team></app-our-team>
+</div>
+
+<div class="container">
+  <app-quality-course></app-quality-course>
+  <app-registration-box [inputData]="myData"></app-registration-box>
+  <!-- @for (data of customDb; track data) {
+  <app-registration-box [inputData]="data"></app-registration-box>
+  } -->
+</div>

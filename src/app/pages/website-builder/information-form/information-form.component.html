@@ -1,0 +1,68 @@
+<form (ngSubmit)="onSubmit()"
+      [formGroup]="dataForm"
+      #formElement="ngForm">
+
+  <div class="d-row">
+
+    <app-form-input-item
+      class="w-100"
+      [controlName]="websiteNameCtrl"
+      placeholder="Enter website name"
+      label="Website Name"
+      [required]="true"
+      type="text"
+      [touched]="websiteNameCtrl.touched"
+      [invalid]="websiteNameCtrl.invalid">
+    </app-form-input-item>
+
+    <div class="fixed-view-input w-100">
+      <app-form-input-item
+        class="w-100"
+        [enableSlug]="true"
+        [controlName]="domainCtrl"
+        placeholder="Enter domain name"
+        label="Domain Name"
+        [required]="true"
+        type="text"
+        [touched]="domainCtrl.touched"
+        [invalid]="domainCtrl.invalid">
+      </app-form-input-item>
+      <div class="fixed-value">
+        <p>.saleecom.com</p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <div class="d-row">
+    <app-form-select-item
+      class="w-100"
+      [data]="categories"
+      [controlName]="websiteCategoryCtrl"
+      label="Website Category"
+      [required]="true"
+      [touched]="websiteCategoryCtrl.touched"
+      [invalid]="websiteCategoryCtrl.invalid">
+    </app-form-select-item>
+
+    <app-form-select-item
+      class="w-100"
+      [data]="subCategories"
+      [controlName]="websiteSubCategoryCtrl"
+      label="Business Type"
+      [required]="true"
+      [touched]="websiteSubCategoryCtrl.touched"
+      [invalid]="websiteSubCategoryCtrl.invalid">
+    </app-form-select-item>
+  </div>
+
+  <div class="action">
+    <button class="btn-primary" type="submit">Next</button>
+  </div>
+
+
+
+</form>

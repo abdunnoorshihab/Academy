@@ -1,0 +1,14 @@
+<section class="container">
+  <div class="head">
+    <h2>Features that make a <span>difference.</span></h2>
+    <p>We've engineered features that will actually <br>make a difference to your business</p>
+  </div>
+
+  <div class="cards">
+
+    @for (data of features; let i = $index; track data._id) {
+      <app-feature-card [data]="data"></app-feature-card>
+    }
+
+  </div>
+</section>

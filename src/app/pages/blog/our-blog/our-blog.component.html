@@ -1,0 +1,19 @@
+    <div class="blog-container">
+        <div class="blog-container-heading">
+            <h1>OUR BLOG</h1>
+            <p>Lorem ipsum dolor sit amet erunt aspernatur corporis inventore expedita suscipit.</p>
+        </div>
+
+        <div class="blog-card-container">
+            <app-blog-card
+                *ngFor="let post of blogPosts"
+                [image]="post.image"
+                [title]="post.title"
+                [content]="post.content"
+                [link]="post.link">
+            </app-blog-card>
+        </div>
+
+        <button class="load-btn">Load More</button>
+        
+    </div>

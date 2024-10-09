@@ -1,0 +1,20 @@
+<div class="features">
+  <div class="container">
+    <div class="img-section">
+      <img src="/images/boy.png" alt="" />
+    </div>
+    <div class="faq-section">
+      <img src="/images/Image_15.png" alt="" />
+      <div class="faq">
+        <h3>COURSE FEATURES</h3>
+        @for(data of faqs; track data._id;){
+        <app-single-faq
+          [data]="data"
+          [activeId]="activeId"
+          (onItemToggle)="onItemToggle($event)"
+        ></app-single-faq>
+        }
+      </div>
+    </div>
+  </div>
+</div>

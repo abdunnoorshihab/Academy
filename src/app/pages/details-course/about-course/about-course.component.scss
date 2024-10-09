@@ -1,0 +1,142 @@
+@import 'variables';
+@import "fonts";
+
+.ac-main-container{
+    width: 100%;
+    position: relative;
+}
+
+.ac-container{
+    margin-top: 140px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.bgbox-01{
+    position: absolute;
+    width: 500px;
+    left:  -400px;
+    top: 100px;
+    z-index: -1;
+    img{
+        width: 100%;
+    }
+}
+
+.ac-container-left{
+    justify-self: end;
+    
+    
+    h1{ 
+        font-family: $font-en-Permanent_Marker;
+        font-size: calc($font-title)+5px;
+        color: #1b9aaa;
+        font-weight:bold;
+    }
+
+    .course-faq-container{
+        margin-top: 20px;
+        height: 350px;
+
+    }
+}
+
+.ac-container-right{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+
+    .checklist-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .checklist{
+            display: flex;
+            justify-content: start;
+            width: 100%;
+            align-items: start;
+            gap: 10px;
+
+            svg{
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+
+    .img-01{
+        height: 300px;
+        width: 400px;
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .ac-container{
+        grid-template-columns: 1fr;
+        gap: 60px;
+       }
+
+    .ac-container-left{
+        justify-self: center;
+        
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .ac-container{
+        grid-template-columns: 1fr;
+        gap: 60px;
+       }
+
+    .ac-container-left{
+        justify-self: center;
+        
+    }
+
+    .ac-container-right{
+        
+    
+        .img-01{
+            height: 250px;
+            width: 340px;
+    
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .ac-container-left{
+        .course-faq-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 450px;
+            
+        }
+    }
+
+    
+
+}
+
+
+
+
+

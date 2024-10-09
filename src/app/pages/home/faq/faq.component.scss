@@ -1,0 +1,44 @@
+@import "variables";
+
+.container {
+  width: 95%;
+  max-width: $container-max-width;
+  margin: $header-height auto 0;
+}
+
+.header {
+  margin-bottom: 50px;
+  text-align: center;
+
+  h3 {
+    font-size: $font-sub-title;
+    font-family: $font-en-primary;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: $font-readable;
+    line-height: 25px;
+    font-weight: 500;
+    font-family: $font-en-primary;
+    margin-bottom: 20px;
+  }
+}
+
+.content{
+  transition: all 5s linear 5s;
+}
+
+
+
+@media only screen and (max-width: 599px) {
+  .header {
+    h3 {
+      font-size: $font-sub-title-sm;
+    }
+
+    p {
+      font-size: $font-readable-sm;
+    }
+  }
+}

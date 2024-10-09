@@ -1,0 +1,24 @@
+
+<section>
+  <div class="container">
+    <app-top-progress-stepper [activeStep]="activeStep"></app-top-progress-stepper>
+
+    @if(activeStep === '1') {
+      <app-information-form (onSubmitForm)="onSubmitInformationForm($event)"></app-information-form>
+    }
+
+    @if(activeStep === '2') {
+      <app-login-registration-form (onSubmitForm)="onSubmitLoginForm($event)"></app-login-registration-form>
+    }
+
+    @if(activeStep === '3') {
+      <app-theme-build (onBuildComplete)="onBuildComplete($event)"></app-theme-build>
+    }
+
+    @if(activeStep === '4') {
+      <app-build-complete></app-build-complete>
+    }
+
+  </div>
+</section>
+

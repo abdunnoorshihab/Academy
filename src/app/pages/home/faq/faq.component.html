@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="header">
+    <h1>You asked, we answered.</h1>
+    <p>
+      Still got questions? Feel free to reach out to our incredible
+      support team, 7 days a week.
+    </p>
+  </div>
+
+  <div class="content">
+    @for(data of faqs; track data._id;){
+     <app-single-faq [data]="data" [activeId]="activeId" (onItemToggle)="onItemToggle($event)"></app-single-faq>
+    }
+  </div>
+
+</div>
+

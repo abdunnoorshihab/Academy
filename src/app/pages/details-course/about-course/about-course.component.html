@@ -1,0 +1,74 @@
+<div class="container">
+  <div class="ac-main-container">
+    <div class="ac-container">
+      <div class="ac-container-left">
+        <h1>ABOUT THIS COURSE</h1>
+        <div class="course-faq-container">
+          @for(data of faqs; track data._id;){
+          <app-single-faq
+            [data]="data"
+            [activeId]="activeId"
+            (onItemToggle)="onItemToggle($event)"
+          ></app-single-faq>
+          }
+        </div>
+      </div>
+
+      <div class="ac-container-right">
+        <div class="checklist-container">
+          <div class="checklist">
+            <span
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  fill="#1B9AAA"
+                  d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                /></svg
+            ></span>
+            <p>100 hours of learing over 10 weeks</p>
+          </div>
+          <div class="checklist">
+            <span
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  fill="#1B9AAA"
+                  d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                /></svg
+            ></span>
+            <p>Live class 3 times per week</p>
+          </div>
+          <div class="checklist">
+            <span
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  fill="#1B9AAA"
+                  d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                /></svg
+            ></span>
+            <p>100% hands-on experience</p>
+          </div>
+          <div class="checklist">
+            <span
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  fill="#1B9AAA"
+                  d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                /></svg
+            ></span>
+            <p>Certifitaion in 10 weeks</p>
+          </div>
+        </div>
+        <div class="img-01">
+          <img src="../asset/Course-details-page/Home Page 04-01.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="bgbox-01">
+      <img src="../asset/Course-details-page/Image-57.png" alt="" />
+    </div>
+  </div>
+</div>

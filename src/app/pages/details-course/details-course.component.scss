@@ -1,0 +1,28 @@
+.parent{
+    position: relative;
+}
+.circle{
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    background: #cfe5e7;
+    border-radius: 50%;
+    top: 56%;
+    left: 57px;
+}
+.diamond{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: #cfe5e7;
+}
+.bgbox-01{
+    position: absolute;
+    width: 600px;
+    left:  -570px;
+    top: 65%;
+    z-index: -1;
+    img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,14 @@
+<div class="container">
+
+  <div class="humble-pricing-header">
+    <h2>Our Humble Pricing</h2>
+    <p>Our articles helped a lot of people to improve their workflow.</p>
+  </div>
+
+
+  <div class="humble-pricing-cards">
+    @for(data of pricing; track data._id){
+      <app-price-card [data]="data"></app-price-card>
+    }
+  </div>
+</div>

@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "_id": "1",
+      "name": "Unified Dashboard",
+      "description": "Lorem ipsum dolor sit amet. At nostrum tempore sit omnis animi et velit officiis et fugiat repellat ut dignissimos odio rem sequi vitae. Qui quae quos aut minus aliquam qui beatae debitis ut ratione harum.",
+      "icon": "<svg class=\"icon-svg\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 576 512\"> <path d=\"M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 256h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zm256-32H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16z\"/> </svg>"
+    },
+    {
+      "_id": "2",
+      "name": "Methodoloy",
+      "description": "Lorem ipsum dolor sit amet. At nostrum tempore sit omnis animi et velit officiis et fugiat repellat ut dignissimos odio rem sequi vitae. Qui quae quos aut minus aliquam qui beatae debitis ut ratione harum.",
+      "icon": " <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"> <path d=\"M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z\"/> </svg>"
+    },
+    {
+      "_id": "3",
+      "name": "Outcomes",
+      "description": "Lorem ipsum dolor sit amet. At nostrum tempore sit omnis animi et velit officiis et fugiat repellat ut dignissimos odio rem sequi vitae. Qui quae quos aut minus aliquam qui beatae debitis ut ratione harum.",
+      "icon": " <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 576 512\"> <path d=\"M64 32C28.7 32 0 60.7 0 96v32H576V96c0-35.3-28.7-64-64-64H64zM576 224H0V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V224zM112 352h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm112 16c0-8.8 7.2-16 16-16H368c8.8 0 16 7.2 16 16s-7.2 16-16 16H240c-8.8 0-16-7.2-16-16z\"/> </svg>"
+    },
+    {
+      "_id": "4",
+      "name": "who is this for",
+      "description": "Lorem ipsum dolor sit amet. At nostrum tempore sit omnis animi et velit officiis et fugiat repellat ut dignissimos odio rem sequi vitae. Qui quae quos aut minus aliquam qui beatae debitis ut ratione harum.",
+      "icon": " <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 448 512\"> <path d=\"M364.2 83.8c-24.4-24.4-64-24.4-88.4 0l-184 184c-42.1 42.1-42.1 110.3 0 152.4s110.3 42.1 152.4 0l152-152c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-152 152c-64 64-167.6 64-231.6 0s-64-167.6 0-231.6l184-184c46.3-46.3 121.3-46.3 167.6 0s46.3 121.3 0 167.6l-176 176c-28.6 28.6-75 28.6-103.6 0s-28.6-75 0-103.6l144-144c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-144 144c-6.7 6.7-6.7 17.7 0 24.4s17.7 6.7 24.4 0l176-176c24.4-24.4 24.4-64 0-88.4z\"/> </svg>"
+    },
+    {
+      "_id": "5",
+      "name": "Handoff to developers and Final Project Presenteation Submit",
+      "description": "Lorem ipsum dolor sit amet. At nostrum tempore sit omnis animi et velit officiis et fugiat repellat ut dignissimos odio rem sequi vitae. Qui quae quos aut minus aliquam qui beatae debitis ut ratione harum.",
+      "icon": " <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"> <path d=\"M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z\"/> </svg>"
+    },
+    {
+      "_id": "6",
+      "name": "Handoff to developers and Final Project Presenteation Submit",
+      "description": "Lorem ipsum dolor sit amet. At nostrum tempore sit omnis animi et velit officiis et fugiat repellat ut dignissimos odio rem sequi vitae. Qui quae quos aut minus aliquam qui beatae debitis ut ratione harum.",
+      "icon": " <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 512\"> <path d=\"M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 352h8.2c32.3-39.1 81.1-64 135.8-64c5.4 0 10.7 .2 16 .7V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM320 352H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H360.2C335.1 449.6 320 410.5 320 368c0-5.4 .2-10.7 .7-16l-.7 0zm320 16a144 144 0 1 0 -288 0 144 144 0 1 0 288 0zM496 288c8.8 0 16 7.2 16 16v48h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H496c-8.8 0-16-7.2-16-16V304c0-8.8 7.2-16 16-16z\"/> </svg>"
+    }
+  ]
+}

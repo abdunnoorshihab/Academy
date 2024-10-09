@@ -1,0 +1,201 @@
+.outter-parent {
+  width: 100%;
+  // overflow: hidden;
+}
+.parent {
+  position: relative;
+}
+.circle1 {
+  position: absolute;
+  top: 23%;
+  left: 2%;
+}
+.circle2 {
+  position: absolute;
+  display: block;
+  background: #0297a6;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  top: 18.5%;
+  left: 25%;
+}
+.circle3 {
+  position: absolute;
+  display: block;
+  background: #0297a6;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  top: 25%;
+  right: 5%;
+}
+.squire1 {
+  position: absolute;
+  display: block;
+  background: #badeea;
+  border-radius: 50px;
+  height: 300px;
+  width: 300px;
+  top: 31%;
+  right: -356px;
+  rotate: 45deg;
+}
+.squire2 {
+  position: absolute;
+  display: block;
+  background: #badeea;
+  border-radius: 50px;
+  height: 350px;
+  width: 413px;
+  top: 54%;
+  left: -411px;
+  rotate: 45deg;
+  z-index: -10;
+}
+.stic1 {
+  position: absolute;
+  display: block;
+  top: 90%;
+  left: -11px;
+  img {
+    height: 25px;
+  }
+}
+.stic2 {
+  position: absolute;
+  display: block;
+  background: linear-gradient(to right, transparent, #0297a6);
+  border-radius: 50px;
+  height: 55px;
+  width: 365px;
+  top: 78%;
+  left: -380px;
+}
+.circle4 {
+  position: absolute;
+  display: block;
+  background: #0297a6;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  top: 80%;
+  right: 45%;
+}
+.circle5 {
+  position: absolute;
+  display: block;
+  background: #0297a6;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  top: 99%;
+  right: 63%;
+}
+.circle6 {
+  position: absolute;
+  display: block;
+  background: #0297a6;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  top: 100%;
+  right: 50%;
+}
+.diamond1 {
+  position: absolute;
+  display: block;
+  rotate: 60deg;
+  top: 81%;
+  right: -30%;
+}
+.diamond2 {
+  position: absolute;
+  display: block;
+  // rotate: 60deg;
+  top: 0%;
+  left: -53%;
+  z-index: -1;
+}
+.stic3 {
+  position: absolute;
+  display: block;
+  top: 38%;
+  right: -350px;
+  img {
+    width: 592px;
+    height: 15px;
+  }
+}
+.stic4 {
+  position: absolute;
+  display: block;
+  top: 39.5%;
+  right: -430px;
+  img {
+    width: 592px;
+    height: 15px;
+  }
+}
+.circle7 {
+  position: absolute;
+  display: block;
+  background: #0297a6;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  top: 37%;
+  left: 20%;
+}
+.circle8 {
+  position: absolute;
+  top: 78%;
+  left: 2%;
+  img {
+    height: 80px;
+    width: 80px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .circle2 {
+    background: #b9d4d6;
+    top: 17%;
+    left: 12%;
+  }
+  .circle3 {
+    display: none;
+  }
+  .circle4 {
+    display: none;
+  }
+  .circle5 {
+    display: none;
+  }
+  .circle6 {
+    top: 101%;
+    right: 74%;
+  }
+  .diamond1 {
+    display: none;
+    // background: red;
+  }
+  .stic1 {
+    top: 86%;
+    left: 50px;
+    img {
+      height: 10px;
+    }
+  }
+  .stic2 {
+    display: none;
+  }
+  .stic3 {
+    display: none;
+  }
+  .stic4 {
+    display: none;
+  }
+  .circle7 {
+    display: none;
+  }
+}

@@ -1,0 +1,18 @@
+
+
+<section class="step-wizard">
+  <ul class="step-wizard-list">
+    <li class="step-wizard-item" [class.current-item]="activeStep === '1'">
+      <span class="progress-count">1</span>
+      <span class="progress-label">Website Information</span>
+    </li>
+    <li class="step-wizard-item" [class.current-item]="activeStep === '2'">
+      <span class="progress-count">2</span>
+      <span class="progress-label">Login or Signup</span>
+    </li>
+    <li class="step-wizard-item" [class.current-item]="activeStep === '3'">
+      <span class="progress-count">3</span>
+      <span class="progress-label">Build</span>
+    </li>
+  </ul>
+</section>

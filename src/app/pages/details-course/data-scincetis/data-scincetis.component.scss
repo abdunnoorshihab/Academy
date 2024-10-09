@@ -1,0 +1,144 @@
+
+@import "variables";
+.main-container{
+    width: 100%;
+    padding: 20px 0px;
+    margin-top: 80px;
+    // background-color: #e0f2e9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left{
+    margin-left: -30px;
+// //    padding-right: 40px;
+   width: 100%;
+}
+
+.left h1{
+    font-family: $font-en-Permanent_Marker;
+    font-size: calc($font-title)+ 10px;
+   margin: 20px 0;
+   color: black;
+
+}
+
+.top-text{
+    margin-top: 30px;
+    font-family: $font-en-poppins;
+    font-size:$font-sub-title-sm ;
+    color: rgb(81, 80, 80);
+}
+
+.text-des{
+   margin: 30px 0;
+   text-align: justify; 
+   font-family: $font-en-poppins;
+   font-size:$font-title-desc;
+   color: gray;
+}
+
+.right{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+.img-01{
+    width: 400px;
+    height: 500px;
+}
+
+.img-01 img{
+    width: 100%;
+    height: 100%;
+}
+
+.img-02{
+    position: absolute;
+    width: 500px;
+    height: 400px;
+}
+
+.img-02 img{
+    width: 100%;
+    height: 100%;
+}
+
+.download-btn{
+    margin-top: 20px;
+    border: 0;
+    background-image: $color-btn-secoundary;
+    color: #fff;
+    padding: 15px 18px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .main-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+    .left{
+        order: 1;
+        padding-right: 0;
+    }
+    .right{
+        margin-top: 40px;
+        order: -1;
+        height: 400px;
+    }
+}
+
+ @media (max-width: 428px) {
+    
+ 
+    .img-01{
+     width: 300px;
+     height: 320px;
+ }   
+    .img-02{
+        width: 280px;
+        height: 250px;
+    }
+    .right{
+        height: 300px;
+        margin: 0;
+    }
+    .main-container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    
+ }
+
+ @media (max-width: 360px) {
+    
+ 
+    .img-01{
+     width: 210px;
+     height: 240px;
+    }   
+    .img-02{
+        width: 220px;
+        height: 200px;
+    }
+    .right{
+        height: 220px;
+        margin: 0;
+    }
+    .main-container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    
+ }

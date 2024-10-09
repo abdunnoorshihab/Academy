@@ -1,0 +1,160 @@
+@import "variables";
+
+
+.content{
+  display: flex;
+  gap: 150px;
+  width: 100%;
+  position: relative;
+}
+
+.button {
+  background:$color-btn-secoundary;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 16px;
+  margin: 50px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+ul li {
+  list-style-type: none;
+}
+.li {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 8px;
+}
+.li {
+  svg {
+    margin-top: 2px;
+  }
+}
+.item1 {
+  padding: 100px 120px;
+}
+.item2 {
+  padding: 100px 0px;
+}
+.it2-title {
+  font-size: $font-title;
+  font-family: "Public Sans", sans-serif;
+  padding-bottom: 40px;
+  width: 500px;
+}
+
+
+.bgbox-01{
+  position: absolute;
+  width: 500px;
+  right: -340px;
+  bottom: 0px;
+  z-index: -1;
+  img{
+      width: 100%;
+      rotate: -120deg;
+  }
+}
+
+
+.bgbox-02{
+  position: absolute;
+  width: 500px;
+  left: -350px;
+  bottom: -100px;
+  z-index: -1;
+  img{
+      width: 100%;
+  }
+}
+
+@media (max-width: 1250px){
+  
+  .content{
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .item1{
+    display: flex;
+    justify-content: center;
+    padding: 50px 120px;
+  }
+
+  .item2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 120px;
+  }
+
+  .it2-title{
+    text-align: center;
+    width: 80%;
+  }
+}
+
+
+@media (max-width: 884px){
+  .wyw-container{
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item1{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .bgbox-01{
+    width: 400px;
+    
+  }
+  
+  
+  .bgbox-02{
+    width: 400px;
+    
+  }
+}
+
+
+@media only screen and (max-width: 499px) {
+  .item1 {
+    display: none;
+  }
+  .item2 {
+    padding: 50px 20px;
+  }
+  .it2-title {
+    font-size: $font-title-sm;
+    text-align: center;
+  }
+  .button2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+}

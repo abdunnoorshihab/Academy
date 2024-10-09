@@ -1,0 +1,88 @@
+@import 'variables';
+@import "fonts";
+
+
+.register-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-container-heading{
+    text-align: center;
+    max-width: 400px;
+
+    h1{ 
+        font-family: 'Permanent_Marker';
+        color: #1b9aaa;
+        font-weight:bold;
+    }
+
+    p{  
+        font-family: 'Poppins';
+        color: #1b9aaa;
+        margin-top: 20px;
+    }
+}
+
+.register-container-inputs{
+    font-family: 'Poppins';
+    margin-top: 80px;
+    max-width: 600px;
+
+    .register-inputs{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+
+        input{
+            background-color: transparent;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: solid 2px #1b9aaa;
+            color: #1b9aaa;
+        }
+
+    }
+
+    textarea{
+        resize: none;
+        margin-top: 15px;
+        background-color: transparent;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        border: solid 2px #1b9aaa;
+        color: #1b9aaa;
+    }
+}
+
+.reg-btn{
+    font-family: 'Poppins';
+    margin-top: 20px;
+    background-color: transparent;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: white;
+    background-color: #1b9aaa;
+    border: 0;
+}
+
+
+
+
+@media only screen and (max-width: 499px) {
+    
+    .register-container-inputs{
+        .register-inputs{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .register-container-heading{
+        max-width: 300px;
+    }
+    
+}
